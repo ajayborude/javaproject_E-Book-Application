@@ -1,0 +1,142 @@
+html{
+	scroll-behavior: smooth;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	min-height: 100vh;
+}
+.sticky-footer{
+	position: sticky;
+	top: 100%;
+}
+.footer{
+	background: rgb(41, 25, 25);
+}
+/* =======================Utility Classes========================= */
+a{
+	text-decoration: none;
+	text-transform: capitalize;
+}
+a:hover{
+	text-decoration: none;
+}
+h2{
+	text-transform: capitalize;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding: 30px 0;
+}
+h2::after{
+	content: "";
+	width: 12%;
+	height: 3px;
+	margin:auto;
+	display:block;
+	background: tomato;
+	transition: 0.8s;
+}
+
+/* =======================Navbar========================= */
+.empty{
+	padding: 5px 0;
+}
+.logo{
+	padding: 10px 5px;
+	background-color: white;
+}
+.col-lg-4 h4{
+	font-weight: bold;
+	color: green;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+.navbar-nav li a ,.navbar-brand{
+	color: white !important;
+	margin: 0 10px 0 !important;
+}
+.navbar-nav li a::after{
+	content: "";
+	width: 0%;
+	height: 2px;
+	margin:auto;
+	display:block;
+	background: tomato;
+	transition: 0.8s;
+}
+.navbar-nav li a:hover::after{
+	width: 100%;
+}
+.buttons a, .col-lg-4 a{
+	margin: 0 5px !important;
+}
+.d-flex{
+	margin: 0 50px !important;
+}
+.d-flex button{
+	color: black !important;
+}
+
+/* =======================Background Images========================= */
+.back-img{
+	background: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)) ,url("../Images/book1.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 60vh;
+}
+.back-img h1{
+	text-align: center;
+	color: white;
+	font-size: 35px;
+	font-weight: bold;
+	padding-top: 100px;
+	text-transform: uppercase;
+}
+
+/* =======================Books Categories========================= */
+.recent-book, .old-book{
+	height:100vh;
+	background: #efefef;
+}
+.card-body h6{
+	text-transform: capitalize;
+	font-size: 13px;
+	font-weight: bold;
+}
+.icon h6{
+	text-transform: capitalize;
+	font-size: 8px;
+	font-weight: bold;
+	color: red;
+}
+.book-img{
+	width: 200px !important;
+	height: 250px !important;
+}
+.main-card{
+	transition: 0.8s;
+}
+.main-card:hover{
+	background: lightgray;
+}
+
+.new-book{
+	height:100vh;
+}
+.button-1{
+	display: inline-flex;
+	
+}
+.button-1 a{
+	font-size: 12px !important;
+	margin: 0 auto;
+}
+.book-img1 .book-img{
+	margin: 10px auto;
+}
